@@ -21,7 +21,7 @@ public class Game extends JFrame{
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setTitle("Memory Game");
-        this.getContentPane().setBackground(new Color(0x699FA1));
+        this.getContentPane().setBackground(new Color(0x113B48));//97663E
         this.setSize(1030,530);
         this.setResizable(false);
         
