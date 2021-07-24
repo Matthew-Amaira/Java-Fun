@@ -5,8 +5,12 @@ import javax.swing.JFrame;
 
 public class Game extends JFrame{
     public static ArrayList<Integer> indexes;
+    public int score; // 0/16
+    public static Card openCard1;
+    public static Card openCard2;
 
     public Game(){
+        score  = 0;
         indexes = generateList();
         displayindexes(); //temp
         //Create buttons
@@ -28,6 +32,16 @@ public class Game extends JFrame{
         this.setLayout(layout);
 
         this.setVisible(true);
+    }
+
+    public void incrementScore(){
+        this.score++;
+        if(score == 16){
+            this.dispose();
+            this.score = 0;
+            new Result();
+        }
+        System.out.println("Score is: "+score);
     }
 
     private static ArrayList<Integer> generateList(){
