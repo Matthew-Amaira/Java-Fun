@@ -15,7 +15,6 @@ public class Game extends JFrame{
         displayindexes(); //temp
         //Create buttons
         for(int i=0;i<(Animals.values().length*2);i++){
-            System.out.println("Added Button "+i+" "+indexes.get(i));
             this.add(new Card(Animals.elementAt(indexes.get(i))));
         }
 
@@ -41,7 +40,6 @@ public class Game extends JFrame{
             this.score = 0;
             new Result();
         }
-        System.out.println("Score is: "+score);
     }
 
     private static ArrayList<Integer> generateList(){
