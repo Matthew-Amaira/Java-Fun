@@ -1,5 +1,6 @@
 public class Launcher {
+    static Game playtime;
     public static void main(String[] args) {
-        new Game();
+        playtime = new Game();
     }
-}
+}    
